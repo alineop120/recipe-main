@@ -11,9 +11,9 @@ Esta é uma solução para o desafio da Página de Receita no Frontend Mentor, [
   - [Construído com](#construido-com)
   - [O que eu aprendi](#o-que-eu-aprendi)
   - [Desenvolvimento contínuo](#desenvolvimento-continuo)
-  - [Useful resources](#useful-resources)
+  - [Recursos úteis](#recursos-uteis)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Agradecimentos](#agradecimentos)
 
 ## Overview
 
@@ -89,11 +89,6 @@ Existem algumas áreas que quero continuar desenvolvendo:
 - Aprimorar a acessibilidade: Quero garantir que o site seja o mais acessível possível para todos os usuários.
 - Melhorar a performance: Aprender mais sobre técnicas de otimização de desempenho, como lazy loading e compressão de imagens.
 - Aprofundar o uso de animações e transições: Embora eu tenha utilizado algumas animações simples neste projeto, quero explorar mais sobre animações CSS para melhorar a experiência do usuário.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ### Recursos úteis
 
