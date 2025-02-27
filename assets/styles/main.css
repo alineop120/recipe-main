@@ -1,0 +1,41 @@
+body {
+    background-color: var(--stone-100);
+    font-family: var(--font-outfit);
+    font-weight: 400, 600, 700;
+    color: var(--stone-600);
+    text-align: justify;
+}
+
+.block-main {
+    background-color: var(--white);
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.block-introducao img {
+    width: 300px;
+}
+
+.block-main h1 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    color: var(--stone-900);
+}
+
+.block-preparation {
+    background-color: var(--rose-50);
+    padding: 5px 15px;
+    border-radius: 16px;
+}
+
+.block-preparation h3 {
+    color: var(--rose-800);
+}
+
+block-preparation ul li {
+    color: var(--brown-800);
+}
+
+
