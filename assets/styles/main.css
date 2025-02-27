@@ -9,8 +9,8 @@ body {
 .block-main {
     background-color: var(--white);
     margin: auto;
-    width: 35%;
-    padding: 40px;
+    width: 50%;
+    padding: 2em;
     border-radius: 25px;
 }
 
@@ -29,15 +29,15 @@ body {
 
 .block-omelette img {
     width: 100%;
-    /* height: 276px; */
+    height: auto;/* height: 276px; */
     object-fit: cover;
     border-radius: 13px;
 }
 
 .block-preparation {
     background-color: var(--rose-50);
-    padding: 10px;
-    border-radius: 16px;
+    padding: 1.5em;
+    border-radius: 15px;
 }
 
 .block-preparation h3 {
