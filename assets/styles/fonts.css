@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit&display=swap');
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
 
 :root {
     /* Definindo as cores */

@@ -1,7 +1,7 @@
 body {
     background-color: var(--stone-100);
     font-family: var(--font-outfit);
-    font-weight: 400, 600, 700;
+    font-weight: 400;
     color: var(--stone-600);
     text-align: justify;
 }
@@ -9,33 +9,115 @@ body {
 .block-main {
     background-color: var(--white);
     margin: auto;
-    width: 50%;
-    padding: 20px;
+    width: 35%;
+    padding: 40px;
     border-radius: 25px;
 }
 
-.block-introducao img {
-    width: 300px;
+.block-main h1 {
+    font-family: var(--font-young-serif);
+    font-weight: 400;
+    font-size: 38px;
+    color: var(--stone-900);
 }
 
-.block-main h1 {
-    font-family: 'Young Serif', sans-serif;
-    font-weight: 400;
-    color: var(--stone-900);
+.block-main hr {
+    border: none;
+    border-bottom: 2px solid var(--stone-150);
+    margin: 20px 0;
+}
+
+.block-omelette img {
+    width: 100%;
+    /* height: 276px; */
+    object-fit: cover;
+    border-radius: 13px;
 }
 
 .block-preparation {
     background-color: var(--rose-50);
-    padding: 5px 15px;
+    padding: 10px;
     border-radius: 16px;
 }
 
 .block-preparation h3 {
     color: var(--rose-800);
+    margin-left: 15px;
 }
 
-block-preparation ul li {
+.block-preparation ul {
+    padding: 0px 40px;
+}
+
+.block-preparation ul li {
+    margin-bottom: 10px;
+    padding-left: 20px; 
+}
+
+.block-preparation ul li::marker {
+    color: var(--rose-800); 
+    font-size: 16px;
+}
+
+.block-ingredients h2{
+    font-family: var(--font-young-serif);
+    font-weight: 400;
     color: var(--brown-800);
 }
 
+.block-ingredients ul {
+    list-style-type: square;
+    padding: 0px 40px;
+}
 
+.block-ingredients ul li {
+    margin-bottom: 10px;
+    padding-left: 20px; 
+}
+
+.block-ingredients ul li::marker {
+    color: var(--brown-800); 
+    font-size: 16px;
+}
+
+.block-intructions h2{
+    font-family: var(--font-young-serif);
+    font-weight: 400;
+    color: var(--brown-800);
+}
+
+.block-intructions ol {
+    padding: 0px 40px;
+}
+
+.block-intructions ol li {
+    margin-bottom: 10px;
+    padding-left: 20px; 
+}
+
+.block-intructions ol li::marker {
+    color: var(--brown-800); 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.block-nutrition h2{
+    font-family: var(--font-young-serif);
+    font-weight: 400;
+    color: var(--brown-800);
+}
+
+.block-nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.block-nutrition table td {
+    border-bottom: 2px solid var(--stone-150);
+    padding: 10px 20px;
+}
+
+.block-nutrition table td:nth-child(2) {
+    color:var(--brown-800);
+    font-weight: 700;
+}
