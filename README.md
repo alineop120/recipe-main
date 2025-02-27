@@ -1,89 +1,109 @@
-# Frontend Mentor - Recipe page
+# Frontend Mentor - Solução para a Página de Receita
 
-![Design preview for the Recipe page coding challenge](./preview.jpg)
+Esta é uma solução para o desafio da Página de Receita no Frontend Mentor, [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação ao construir projetos realistas.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construido-com)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+  - [Desenvolvimento contínuo](#desenvolvimento-continuo)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### Screenshot
 
-## The challenge
+![](pagina1.png)
 
-Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+![](pagina2.png)
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Links
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## Where to find everything
+## Meu processo
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Construído com
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS Grid
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### O que eu aprendi
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+Durante o desenvolvimento deste projeto, aprendi várias coisas importantes e tive algumas dúvidas que me ajudaram a melhorar minhas habilidades com CSS:
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+Dúvida sobre o uso de font-weight no body: Inicialmente, eu tentava definir os valores de font-weight como 400, 600, 700, o que não era funcional, pois o CSS aceita apenas um valor específico de peso de fonte (ex.: font-weight: 400), e o ideal é definir o peso de fontes de forma explícita para cada uso. Isso me ajudou a entender a forma correta de aplicar o font-weight para fontes variáveis e não repetir valores como tentei inicialmente.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Exemplo corrigido:
+```css
+font-weight: 400; /* Definido apenas o peso de forma adequada */
+```
 
-## Building your project
+Diferença entre hr e a linha na tabela: Eu estava com dificuldades para fazer a linha do <hr> ficar com a mesma espessura da linha inferior da tabela. Após investigar, percebi que o <hr> estava mais grosso devido ao padrão de estilo do navegador, então apliquei um estilo mais personalizado ao <hr>, ajustando a espessura e a cor para igualar à linha da tabela:
+```css
+.block-main hr {
+  border: none;
+  border-top: 2px solid var(--stone-150);
+  margin: 20px 0;
+}
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Uso de variáveis CSS: Eu aprendi a usar as variáveis CSS de forma mais eficiente para gerir as cores e fontes no projeto. Isso facilitou a manutenção do código, tornando-o mais limpo e organizado.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Criar layouts responsivos com Flexbox e CSS Grid: Ao trabalhar com layouts complexos, tive que ajustar e melhorar o uso do Flexbox e do CSS Grid para garantir que o design se adaptasse a diferentes tamanhos de tela. Isso envolveu definir colunas e linhas corretamente, além de garantir que os itens se alinhassem bem em várias resoluções.
 
-## Deploying your project
+Exemplo de uso de grid:
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Ajustes de margem e padding: Durante o desenvolvimento, enfrentei alguns desafios com o espaçamento de elementos, principalmente com a diferença entre as margens e o padding nas várias seções. Ajustei esses valores para garantir uma boa harmonia visual entre as áreas da página.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Exemplo de espaçamento ajustado:
 
-## Create a custom `README.md`
+```css
+.block-main {
+  padding: 40px;
+  margin: auto;
+  width: 35%;
+}
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Desenvolvimento contínuo
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Existem algumas áreas que quero continuar desenvolvendo:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Aprimorar a acessibilidade: Quero garantir que o site seja o mais acessível possível para todos os usuários.
+- Melhorar a performance: Aprender mais sobre técnicas de otimização de desempenho, como lazy loading e compressão de imagens.
+- Aprofundar o uso de animações e transições: Embora eu tenha utilizado algumas animações simples neste projeto, quero explorar mais sobre animações CSS para melhorar a experiência do usuário.
 
-## Submitting your solution
+### Useful resources
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Recursos úteis
 
-## Sharing your solution
+- [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) - Este recurso me ajudou a entender e implementar o layout de grid de forma eficiente.
 
-There are multiple places you can share your solution:
+## Author
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+## Agradecimentos
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Gostaria de agradecer ao Frontend Mentor por fornecer o desafio e à comunidade por toda a ajuda e feedbacks valiosos. Também agradeço ao meu professor de Linguagem Técnica de Programação 3 - ETB por ter me apresentado ao Frontend Mentor e me desafiado nessa revisão de HTML e CSS, o que me ajudou a melhorar minhas habilidades ao longo desse projeto.
