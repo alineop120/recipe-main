@@ -47,7 +47,8 @@ Exemplo corrigido:
 font-weight: 400; /* Definido apenas o peso de forma adequada */
 ```
 
-Diferença entre hr e a linha na tabela: Eu estava com dificuldades para fazer a linha do <hr> ficar com a mesma espessura da linha inferior da tabela. Após investigar, percebi que o <hr> estava mais grosso devido ao padrão de estilo do navegador, então apliquei um estilo mais personalizado ao <hr>, ajustando a espessura e a cor para igualar à linha da tabela:
+Diferença entre hr e a linha na tabela: Eu estava com dificuldades para fazer a linha do `<hr>` ficar com a mesma espessura da linha inferior da tabela. Após investigar, percebi que o `<hr>` estava mais grosso devido ao padrão de estilo do navegador, então apliquei um estilo mais personalizado ao `<hr>`, ajustando a espessura e a cor para igualar à linha da tabela:
+
 ```css
 .block-main hr {
   border: none;
